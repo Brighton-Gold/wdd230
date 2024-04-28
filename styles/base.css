@@ -1,0 +1,101 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 80%; 
+    margin: 0 auto; 
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 20px; /* Space between grid items */
+}
+
+img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: contain; /* Ensures the image's aspect ratio is preserved */
+}
+
+.container {
+    display: flex; 
+    background-color: #1d8dce; /* Blue background */
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    height: 200px;
+    gap: 10px; /* Space between items in the container */
+}
+
+h2 {
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: #333; /* Dark grey text color */
+}
+
+nav ul {
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    display: block;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Cards layout in the main */
+.card {
+    width: 60%; /* Adjust width to control the 'semi-centering' */
+    margin: 20px auto; /* Auto margins for horizontal centering */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+.card h3 {
+    background-color: #1d8dce; /* Blue text color */
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    width: 100%;
+    position: relative;
+    left: -20px;
+}
+
+.card ul {
+    list-style-type: decimal; /* Numbered list items */
+    padding-left: 20px; /* Ensure numbers appear inside the area */
+    text-align: left; /* Aligns text to the left within the centered block */
+}
+.card li {
+    margin: 10px 0; /* Space between list items */
+}
+
+.card a {
+    display: block;
+    padding: 8px;
+    color: black;
+    text-decoration: none; 
+    transition: background-color 0.3s ease; 
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #1d8dce;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 5px 0; /* Small margin for spacing paragraphs */
+}
+
