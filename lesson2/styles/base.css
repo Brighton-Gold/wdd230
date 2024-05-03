@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout by default */
+    gap: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Two columns for medium screens and above */
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr; /* Three columns for large screens and above */
+    }
+}
+
+.card {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+img {
+    max-width: 100%; /* Scales the image to fit its container */
+    max-height: 500px; /* Limits the maximum height */
+    width: auto; /* Maintains the aspect ratio */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 2rem;
+}
