@@ -9,4 +9,5 @@ document.addEventListener('DOMContentLoaded', function () {
         year: 'numeric', month: 'long', day: 'numeric'
     });
     document.getElementById('lastModified').textContent = `Last Updated: ${formattedDate}`;
+    
 });
